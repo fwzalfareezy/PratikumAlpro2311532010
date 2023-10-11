@@ -10,7 +10,9 @@ public class NilaiHuruf {
 		System.out.print("Inputkan nilai angka");
 		nilai=in.nextInt();
 		in.close();
-		if (nilai >=81) {
+		if ((nilai >100) || (nilai<0)) {
+			System.out.println("Nilai tidak valid harus dalam rentang nilai 0 sampai 100");
+		}else if (nilai>=81) {
 			System.out.println("A");
 		}else if (nilai >=71) {
 			System.out.println("B");
