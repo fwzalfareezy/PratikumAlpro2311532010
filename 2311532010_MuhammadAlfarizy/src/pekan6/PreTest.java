@@ -1,24 +1,27 @@
 package pekan6;
-	import java.lang.Math;
+	import java.util.Scanner;
 
 	public class PreTest {
-	    public static void primeFactors(int n) {
-	        while (n % 2 == 0) {
-	            System.out.print(2 + " ");
-	            n /= 2;
-	        }
-	        for (int i = 3; i <= Math.sqrt(n); i += 2) {
-	            while (n % i == 0) {
-	                System.out.print(i + " ");
-	                n /= i;
-	            }
-	        }
-	        if (n > 2)
-	            System.out.print(n);
-	    }
+		    public static void main(String[] args) {
+		        Scanner scanner = new Scanner(System.in);
 
-	    public static void main(String[] args) {
-	        int n = 90;
-	        primeFactors(n);
-	    }
-	}
+		        // Input angka awal
+		        System.out.print("Masukkan angka awal: ");
+		        int angkaAwal = scanner.nextInt();
+
+		        // Input jumlah baris
+		        System.out.print("Masukkan jumlah baris: ");
+		        int jumlahBaris = scanner.nextInt();
+
+		        // Membuat pola angka berlanjut
+		        for (int i = 0; i < jumlahBaris; i++) {
+		            for (int j = 0; j <= i; j++) {
+		                System.out.print(angkaAwal + " ");
+		                angkaAwal++;
+		            }
+		            System.out.println();
+		        }
+
+		        scanner.close();
+		    }
+		}
