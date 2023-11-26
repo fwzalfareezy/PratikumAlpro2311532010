@@ -23,7 +23,7 @@ public class SwitchCase1 {
 				System.out.println("Anda Memilih Prabowo");
 				break;
 			case 3:
-				System.out.println("Anda Memilih Ganjar");
+				System.out.println("Anda Memilih Kubu Banteng Sirah");
 				break;
 			default:
 				System.out.println("Pilihan Anda Bukan Nomor 1 sampai 3");
